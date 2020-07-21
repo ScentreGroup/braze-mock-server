@@ -67,3 +67,13 @@ Since it confirms to the OpenAPI 3.0 specification, please refer to [the officia
 ## Braze Postman collection
 
 Now that we have a local Braze mock server with all the endpoints, it's time to send some sample requests. Of course you could create all the requests manually in your favorite HTTP client, but luckily for us, Braze also offers a [Postman collection](https://app.getpostman.com/api/collections/29baa41d7ba930673ef0). If you use Postman you can import it directly, or there might be a plugin/extension for importing Postman collections.
+
+After importing the Postman collection, you'll also need to setup the environment and use variables from the environment in Postman. Please refer to the following screenshots:
+
+* Environment configuration
+
+![Environment configuration](https://github.com/ScentreGroup/braze-mock-server/raw/master/images/postman_config1.png)
+
+* Use variables from environment
+
+![Use variables from environment](https://github.com/ScentreGroup/braze-mock-server/raw/master/images/postman_config2.png)
