@@ -63,3 +63,7 @@ In order to add custom responses for various HTTP status codes, you'll need to e
 ```
 
 Since it confirms to the OpenAPI 3.0 specification, please refer to [the official documentation for OpenAPI](https://swagger.io/docs/specification/describing-responses/) for more information.
+
+## Braze Postman collection
+
+Now that we have a local Braze mock server with all the endpoints, it's time to send some sample requests. Of course you could create all the requests manually in your favorite HTTP client, but luckily for us, Braze also offers a [Postman collection](https://app.getpostman.com/api/collections/29baa41d7ba930673ef0). If you use Postman you can import it directly, or there might be a plugin/extension for importing Postman collections.
