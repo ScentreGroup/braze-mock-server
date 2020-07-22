@@ -2509,8 +2509,32 @@
         },
         "responses": {
           "200": {
-            "description": "Sometimes seen as `success`, this code indicates that the request was successfully made."
-          }
+            "description": "Sometimes seen as `success`, this code indicates that the request was successfully made.",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "success": {
+                    "value": {
+                        "dispatch_id": "10000"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "success": {
+                    "value": {
+                      "message": "Invalid or missing API key:"
+                    }
+                  }
+                }
+              }
+            }            
+          }          
         },
         "deprecated": false,
         "security": [
@@ -3257,6 +3281,12 @@
       "properties": {
         "external_user_id": {
           "type": "string"
+        },
+        "trigger_properties":{
+          "type": "object"
+        },
+        "attributes": {
+          "type": "object"
         }
       }
     },
